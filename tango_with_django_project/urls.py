@@ -25,10 +25,6 @@ app_name = 'rango'
 urlpatterns = [
     path('rango/', views.index, name='index'),
     path('rango/about/', views.about, name = 'about'),
-    path('rango/category/<slug:category_name_slug>/',
-         views.show_category, name='show_category'),
-    path('rango/page/<slug:page_title_slug>/',
-         views.show_page, name='show_page'),
+   
     
-      
 ] + static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)
